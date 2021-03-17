@@ -10,7 +10,7 @@ if (isset($_POST['Sumbit'])) {
 
 
   mail($mailto, $headers, $txt);
-  header("Location: index.php?mailsend");
+  header("Location: index.html?mailsend");
 }
 
 
