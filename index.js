@@ -10,3 +10,15 @@ emailIcon.addEventListener('mouseover', function(event){
 emailIcon.addEventListener('mouseout', function(event){
   emailIcon.innerHTML= envClosed;
 });
+var tabs = ["#about","#skills","#projects","#contact-me"];
+window.onscroll = function(){myFunction()};
+var navbar = document.querySelector('.nav-bar');
+var sticky = navbar.offsetTop;
+
+function myFunction(){
+  if (window.pageYOffset >= sticky){
+    navbar.classList.add("sticky");
+  }else {
+    navbar.classList.remove("sticky");
+  }
+}
